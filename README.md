@@ -1,5 +1,5 @@
 # DjangoBlog
-A really simple blog deployed using Django and Python. 
+A really simple blog deployed using Django 2.0 and Python. 
 
 Inspired by this tutorial:https://www.youtube.com/watch?v=D6esTdOLXh4
 
