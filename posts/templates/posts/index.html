@@ -3,13 +3,17 @@
 {% block content %}
 
 <h3 class = "center-align teal lighten-1 latest-posts" >{{title}}</h3>
-    <ul class = "collection">
+    <div class="row">
         {% for post in posts %}
-            <li class = "collection-item blog-post">
-                <a href= "/posts/details/{{post.id}}">{{post.title}}</a>
-                <p>{{post.body|truncatechars:240 }}</p>
-            </li>
+            <div class= "col s3">
+                <div class = "card">
+                    <span class = "card-title"><a href= "/posts/details/{{post.id}}">{{post.title}}</a></span>
+                    <div class = "card-content">
+                        <p>{{post.body|truncatechars:240 }}</p>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}
 
